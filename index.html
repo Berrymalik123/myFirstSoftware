@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Tester Playground</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Code Tester Playground</h1>
+      <p>Practice your code in multiple programming languages directly in your browser.</p>
+    </header>
+
+    <main>
+      <section class="controls">
+        <label for="language">Language</label>
+        <select id="language"></select>
+
+        <label for="stdin">Standard input (optional)</label>
+        <textarea id="stdin" rows="4" placeholder="Type input for your program here..."></textarea>
+
+        <button id="runBtn">Run Code</button>
+      </section>
+
+      <section class="editor-panel">
+        <label for="editor">Code editor</label>
+        <textarea id="editor" rows="18"></textarea>
+      </section>
+
+      <section class="output-panel">
+        <label for="output">Output</label>
+        <pre id="output">Your output will appear here...</pre>
+      </section>
+    </main>
+
+    <footer>
+      <small>
+        Powered by the public
+        <a href="https://github.com/engineer-man/piston" target="_blank" rel="noreferrer">Piston API</a>
+        for code execution.
+      </small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
